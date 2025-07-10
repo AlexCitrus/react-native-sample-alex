@@ -16,11 +16,71 @@ A complete mobile inventory management app featuring:
 
 ## 📋 Prerequisites
 
-- Node.js (v16 or later)
-- Expo CLI: `npm install -g @expo/cli`
-- A code editor (VS Code recommended)
-- A Supabase account (free at [supabase.com](https://supabase.com))
-- Basic knowledge of JavaScript/React (helpful but not required)
+Before starting this workshop, make sure you have the following installed and set up:
+
+### Required Software
+- **Node.js** (v18 or later) - Download from [nodejs.org](https://nodejs.org/)
+- **Git** - Download from [git-scm.com](https://git-scm.com/)
+- **Code Editor** - VS Code recommended with React Native extensions
+
+### Mobile Development Setup
+- **Expo CLI**: Install globally with `npm install -g @expo/cli`
+- **Expo Go App**: Download on your phone from App Store/Google Play for testing
+- **iOS Simulator** (Mac only) or **Android Studio** (optional but recommended)
+
+### Account Setup
+- **Supabase Account** - Sign up for free at [supabase.com](https://supabase.com)
+- **Expo Account** - Sign up at [expo.dev](https://expo.dev) (optional but helpful)
+
+### Creating a New Project
+If you're starting from scratch, create a new Expo project with:
+```bash
+npx create-expo-app@latest MyInventoryApp
+cd MyInventoryApp
+```
+
+### Required Dependencies
+This project uses the following key dependencies (already included in package.json):
+```bash
+# Navigation
+npm install @react-navigation/native @react-navigation/native-stack
+npx expo install react-native-screens react-native-safe-area-context
+
+# Supabase & Authentication
+npm install @supabase/supabase-js
+npx expo install @react-native-async-storage/async-storage react-native-url-polyfill
+
+# Additional utilities
+npx expo install expo-constants
+```
+
+### Knowledge Prerequisites
+- **Basic JavaScript/ES6** - Understanding of functions, promises, async/await
+- **Basic React** - Components, hooks (useState, useEffect), props
+- **Mobile Development Concepts** - Helpful but not required
+
+### Verification Commands
+Test your setup with these commands:
+```bash
+# Check Node.js version
+node --version
+
+# Check Expo CLI
+expo --version
+
+# Verify Git installation
+git --version
+
+# Test project creation (optional)
+npx create-expo-app@latest TestApp --template blank
+```
+
+### Recommended VS Code Extensions
+- ES7+ React/Redux/React-Native snippets
+- React Native Tools
+- Auto Rename Tag
+- Bracket Pair Colorizer
+- GitLens
 
 ## 🚀 Getting Started
 
